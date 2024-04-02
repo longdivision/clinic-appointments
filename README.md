@@ -4,6 +4,7 @@ We want to launch a booking facility with partner clinics.
 
 We will provide JSON which represents all time slots for a given day across multiple clinics. The data is in this format:
 
+```typescript
 interface Appointment {
     clinicId: string;
     clinicName: string;
@@ -12,9 +13,11 @@ interface Appointment {
     booked: boolean;
     patientName?: string;
 }
+```
 
 e.g.
 
+```json
 {
     "clinicId": "1",
     "clinicName": "Aurora Reproductive Healthcare",
@@ -23,6 +26,7 @@ e.g.
     "booked": true,
     "patientName": "Zou Jian"
 }
+```
 
 We’d like you to use the JSON to complete the following exercises.
 
@@ -48,7 +52,7 @@ The clinic would like a list of which appointments can be moved.
 
 The function signature for this can be shown like so:
 
-```
+```typescript
 function suggestNewAppointments(
     appointments: Appointment[],
     clinicId: number,
