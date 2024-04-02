@@ -40,9 +40,10 @@ You will need to be able to load a JSON file and print text to the screen only.
 
 Print out the availability at each clinic. An appointment is booked if `booked: true` is set in the JSON. E.g.
 
+```
 Spire Healthcare Limited: 25%
 Apricity Fertility: 10%
-...
+```
 
 ## Task 2: Move patients due to emergency appointment
 
@@ -68,9 +69,11 @@ function suggestNewAppointments(
 
 It should output a set of move instructions for clinic staff, e.g:
 
+```
 1. Move patient “Zou Jian” to 11:10 @ “Spire Healthcare Limited" (20 minutes earlier)
 2. Move patient “Brian Hamilton” to 13:10 @ “Spire Healthcare Limited” (40 minutes later)
 3. Patient “Brian Hamilton” could not be accommodated.
+```
 
 Notes:
 - A patient can be moved to a different clinic.
